@@ -580,7 +580,7 @@ class HomeScreen(QWidget):
         # Image 1 (PLC)
         self.label_imagen1 = QLabel(pump_window)
         self.label_imagen1.setObjectName("PLC_Principal")
-        self.label_imagen1.setPixmap(QPixmap("PLC_LC.png").scaled(90, 90, Qt.AspectRatioMode.KeepAspectRatio))
+        self.label_imagen1.setPixmap(QPixmap("images/PLC_LC.png").scaled(90, 90, Qt.AspectRatioMode.KeepAspectRatio))
         self.label_imagen1.setGeometry(250, 20, 90, 90)  
 
         self.tag_imagen1 = QLabel("      PLC \n \n  LC\n 101", pump_window)
@@ -590,7 +590,7 @@ class HomeScreen(QWidget):
 
         # Image 1.1 (VDF)
         self.image_vdf = QLabel(pump_window)
-        self.image_vdf.setPixmap(QPixmap("FIC.png").scaled(120, 90, Qt.AspectRatioMode.KeepAspectRatio))
+        self.image_vdf.setPixmap(QPixmap("images/FIC.png").scaled(120, 90, Qt.AspectRatioMode.KeepAspectRatio))
         self.image_vdf.setGeometry(250, 125, 120, 90)  
         self.tag_imagen2 = QLabel("      VDF \n \n FIC \n 101", pump_window)
         self.tag_imagen2.setGeometry(280, 102, 75, 100)  
@@ -598,7 +598,7 @@ class HomeScreen(QWidget):
 
         # Image conector input
         self.image_input_s1 = QLabel(pump_window)
-        self.image_input_s1.setPixmap(QPixmap("conector_input.png").scaled(150, 150, Qt.AspectRatioMode.KeepAspectRatio))
+        self.image_input_s1.setPixmap(QPixmap("images/conector_input.png").scaled(150, 150, Qt.AspectRatioMode.KeepAspectRatio))
         self.image_input_s1.setGeometry(0, 213, 150, 150) 
         self.tag_image_input_s1 = QLabel("103 | TK-003", pump_window)
         self.tag_image_input_s1.setGeometry(10, 238, 75, 100)  
@@ -607,7 +607,7 @@ class HomeScreen(QWidget):
         # Image 2 (Pump)
         self.label_pump = QLabel(pump_window)
         self.state_pump = True
-        self.label_pump.setPixmap(QPixmap("pump.png").scaled(80,120, Qt.AspectRatioMode.KeepAspectRatio))
+        self.label_pump.setPixmap(QPixmap("images/pump.png").scaled(80,120, Qt.AspectRatioMode.KeepAspectRatio))
         self.label_pump.setGeometry(250, 185, 100, 200)  
         self.tag_imagen3 = QLabel("PUMP | P-001", pump_window)
         self.tag_imagen3.setGeometry(250, 320, 100, 20) 
@@ -617,12 +617,12 @@ class HomeScreen(QWidget):
 
         # Image VALVE CHECK
         self.image_check = QLabel(pump_window)
-        self.image_check.setPixmap(QPixmap("check.png").scaled(40, 40, Qt.AspectRatioMode.KeepAspectRatio))
+        self.image_check.setPixmap(QPixmap("images/check.png").scaled(40, 40, Qt.AspectRatioMode.KeepAspectRatio))
         self.image_check.setGeometry(345, 245, 40, 40)  
 
         # Image VALVE manual
         self.image_valve_1 = QLabel(pump_window)
-        self.image_valve_1.setPixmap(QPixmap("valve.png").scaled(40, 40, Qt.AspectRatioMode.KeepAspectRatio))
+        self.image_valve_1.setPixmap(QPixmap("images/valve.png").scaled(40, 40, Qt.AspectRatioMode.KeepAspectRatio))
         self.image_valve_1.setGeometry(410, 246, 40, 40)  
 
         # Pump frequency
@@ -649,7 +649,7 @@ class HomeScreen(QWidget):
         flowmeter_window.setMinimumSize(150, 200)
         flowmeter_window.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         label_flowmeter = QLabel(flowmeter_window)
-        label_flowmeter.setPixmap(QPixmap("flow_meter.png").scaled(130, 130, Qt.AspectRatioMode.KeepAspectRatio))
+        label_flowmeter.setPixmap(QPixmap("images/flow_meter.png").scaled(130, 130, Qt.AspectRatioMode.KeepAspectRatio))
         label_flowmeter.setGeometry(200, 40, 130, 130)
         label_flowmeter.mousePressEvent = lambda event: self.show_parameters_tank(label_flowmeter, "Flowmeter Parameters")
         self.tag_imagen_ft = QLabel("Flowmeter \n \n   FT \n   100",flowmeter_window)
@@ -658,7 +658,7 @@ class HomeScreen(QWidget):
 
         # Image CV 100
         self.image_CV_100 = QLabel(flowmeter_window)
-        self.image_CV_100.setPixmap(QPixmap("cv_valve.png").scaled(140, 140, Qt.AspectRatioMode.KeepAspectRatio))
+        self.image_CV_100.setPixmap(QPixmap("images/cv_valve.png").scaled(140, 140, Qt.AspectRatioMode.KeepAspectRatio))
         self.image_CV_100.setGeometry(75, 27, 140, 140)  
         self.tag_CV_100 = QLabel("Servo Valve \n \n   CV \n   100",flowmeter_window)
         self.tag_CV_100.setGeometry(150, 0, 100, 100)
@@ -666,14 +666,14 @@ class HomeScreen(QWidget):
 
         # Image PT 100
         self.image_PT_100 = QLabel(flowmeter_window)
-        self.image_PT_100.setPixmap(QPixmap("LT.png").scaled(70, 70, Qt.AspectRatioMode.KeepAspectRatio))
+        self.image_PT_100.setPixmap(QPixmap("images/LT.png").scaled(70, 70, Qt.AspectRatioMode.KeepAspectRatio))
         self.image_PT_100.setGeometry(40, 230, 70, 70)  
         self.tag_PT_100 = QLabel("Pressure Transmitter \n \n   PT \n   100",flowmeter_window)
         self.tag_PT_100.setGeometry(60, 200, 120, 100)
         self.tag_PT_100.setStyleSheet("font-weight: bold;")
 
         self.image_GP_100 = QLabel(flowmeter_window)
-        self.image_GP_100.setPixmap(QPixmap("LT.png").scaled(70, 70, Qt.AspectRatioMode.KeepAspectRatio))
+        self.image_GP_100.setPixmap(QPixmap("images/LT.png").scaled(70, 70, Qt.AspectRatioMode.KeepAspectRatio))
         self.image_GP_100.setGeometry(40, 160, 70, 70)
         self.tag_GP_100 = QLabel("Pressure Gauge \n \n   PG \n   100",flowmeter_window)
         self.tag_GP_100.setGeometry(60, 130, 120, 100)
@@ -682,17 +682,17 @@ class HomeScreen(QWidget):
 
         # Image VALVE manual 2
         self.image_valve_2 = QLabel(flowmeter_window)
-        self.image_valve_2.setPixmap(QPixmap("valve.png").scaled(40, 40, Qt.AspectRatioMode.KeepAspectRatio))
+        self.image_valve_2.setPixmap(QPixmap("images/valve.png").scaled(40, 40, Qt.AspectRatioMode.KeepAspectRatio))
         self.image_valve_2.setGeometry(50, 303, 40, 40)  
 
         # Image VALVE manual 3
         self.image_valve_3 = QLabel(flowmeter_window)
-        self.image_valve_3.setPixmap(QPixmap("valve_v.png").scaled(40, 40, Qt.AspectRatioMode.KeepAspectRatio))
+        self.image_valve_3.setPixmap(QPixmap("images/valve_v.png").scaled(40, 40, Qt.AspectRatioMode.KeepAspectRatio))
         self.image_valve_3.setGeometry(193, 200, 40, 40)  
 
         # Image conector output
         self.image_input_s1 = QLabel(flowmeter_window)
-        self.image_input_s1.setPixmap(QPixmap("conector_output.png").scaled(150, 150, Qt.AspectRatioMode.KeepAspectRatio))
+        self.image_input_s1.setPixmap(QPixmap("images/conector_output.png").scaled(150, 150, Qt.AspectRatioMode.KeepAspectRatio))
         self.image_input_s1.setGeometry(170, 248, 150, 150)  
         self.tag_image_input_s1 = QLabel("103 | TK-003", flowmeter_window)
         self.tag_image_input_s1.setGeometry(190, 273, 75, 100)  
@@ -700,7 +700,7 @@ class HomeScreen(QWidget):
 
         # Image conector output 2
         self.image_output_s2 = QLabel(flowmeter_window)
-        self.image_output_s2.setPixmap(QPixmap("conector_output.png").scaled(150, 150, Qt.AspectRatioMode.KeepAspectRatio))
+        self.image_output_s2.setPixmap(QPixmap("images/conector_output.png").scaled(150, 150, Qt.AspectRatioMode.KeepAspectRatio))
         self.image_output_s2.setGeometry(270, 200, 150, 150)  
         self.tag_image_output_s2 = QLabel("102 | TK-002", flowmeter_window)
         self.tag_image_output_s2.setGeometry(280, 225, 75, 100)  
@@ -725,11 +725,11 @@ class HomeScreen(QWidget):
 
         # Level Sensor Image
         self.label_sensor_level = QLabel(tank_window)
-        self.label_sensor_level.setPixmap(QPixmap("LT.png").scaled(70, 70, Qt.AspectRatioMode.KeepAspectRatio))
+        self.label_sensor_level.setPixmap(QPixmap("images/LT.png").scaled(70, 70, Qt.AspectRatioMode.KeepAspectRatio))
         self.label_sensor_level.setGeometry(115, 110, 70, 70)  
 
         self.imagen_fondo = QLabel(tank_window)
-        self.imagen_fondo.setPixmap(QPixmap("tk-001.png").scaled(250, 250, Qt.AspectRatioMode.KeepAspectRatio))
+        self.imagen_fondo.setPixmap(QPixmap("images/tk-001.png").scaled(250, 250, Qt.AspectRatioMode.KeepAspectRatio))
         self.imagen_fondo.setGeometry(-00, 130, 250, 250)
         
         self.imagen_fondo.mousePressEvent = lambda event: self.show_parameters_tank(self.imagen_fondo, "Parameters - Tank")
@@ -750,7 +750,7 @@ class HomeScreen(QWidget):
 
         # Image 1.1 (VDF)
         self.image_CV_102 = QLabel(tank_window)
-        self.image_CV_102.setPixmap(QPixmap("cv_valve.png").scaled(140, 140, Qt.AspectRatioMode.KeepAspectRatio))
+        self.image_CV_102.setPixmap(QPixmap("images/cv_valve.png").scaled(140, 140, Qt.AspectRatioMode.KeepAspectRatio))
         self.image_CV_102.setGeometry(190, 210, 140, 140)  
         self.tag_image_CV_102 = QLabel("Servo Valve \n \n   CV \n   102", tank_window)
         self.tag_image_CV_102.setStyleSheet("font-weight: bold;")
@@ -758,7 +758,7 @@ class HomeScreen(QWidget):
 
         # Image output 3
         self.image_output_s3 = QLabel(tank_window)
-        self.image_output_s3.setPixmap(QPixmap("conector_output.png").scaled(150, 150, Qt.AspectRatioMode.KeepAspectRatio))
+        self.image_output_s3.setPixmap(QPixmap("images/conector_output.png").scaled(150, 150, Qt.AspectRatioMode.KeepAspectRatio))
         self.image_output_s3.setGeometry(290, 250, 150, 150)  
         self.tag_image_output_s3 = QLabel("102 | TK-002", tank_window)
         self.tag_image_output_s3.setGeometry(300, 275, 75, 100)  
@@ -1300,9 +1300,9 @@ class HomeScreen(QWidget):
     def toggle_pump_image(self):  #self.)
         global bool_r_0 
         if bool_r_0 == True:
-            self.label_pump.setPixmap(QPixmap("pump-pid-x.png").scaled(80, 120, Qt.AspectRatioMode.KeepAspectRatio))
+            self.label_pump.setPixmap(QPixmap("images/pump-pid-x.png").scaled(80, 120, Qt.AspectRatioMode.KeepAspectRatio))
         else:
-            self.label_pump.setPixmap(QPixmap("pump-pid-x.png").scaled(80, 120, Qt.AspectRatioMode.KeepAspectRatio))
+            self.label_pump.setPixmap(QPixmap("images/pump-pid-x.png").scaled(80, 120, Qt.AspectRatioMode.KeepAspectRatio))
 
     def read_sensors(self):
 
@@ -1382,7 +1382,7 @@ class HomeScreen(QWidget):
     def show_parameters_tank(self, widget, title):
         window = QWidget()
         window.setWindowTitle(title)
-        window.setWindowIcon(QIcon("tanque.png"))
+        window.setWindowIcon(QIcon("images/tanque.png"))
         window.setFixedSize(350, 150)
         layout = QVBoxLayout(window)
         label = QLabel(f"Parameters: {title}")
@@ -1400,7 +1400,7 @@ class HomeScreen(QWidget):
 
         pump_parameters_window = QWidget()
         pump_parameters_window.setWindowTitle(title)
-        pump_parameters_window.setWindowIcon(QIcon("tanque.png"))
+        pump_parameters_window.setWindowIcon(QIcon("images/tanque.png"))
         pump_parameters_window.setFixedSize(350, 150) 
         layout = QVBoxLayout(pump_parameters_window)
 
@@ -1613,7 +1613,7 @@ class simulation_trend(QDialog):
     def __init__(self, t_sim, y_sim, parent=None):
         super().__init__(parent)
         self.setWindowTitle("Simulation - Tank Response")
-        self.setWindowIcon(QIcon("tanque.png")) 
+        self.setWindowIcon(QIcon("images/tanque.png")) 
         self.setWindowFlags(self.windowFlags() | Qt.WindowType.WindowMaximizeButtonHint)
         self.resize(1000, 500)
 
@@ -2264,7 +2264,7 @@ class main_screen(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("SCADA")
-        self.setWindowIcon(QIcon("tank.png")) 
+        self.setWindowIcon(QIcon("images/tank.png")) 
         screen = QApplication.primaryScreen().availableGeometry()
         self.setGeometry(screen)
 
