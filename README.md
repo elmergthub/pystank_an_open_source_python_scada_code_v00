@@ -1,4 +1,6 @@
 ### PySTank: An open-source Python SCADA tool for real-time tank level control of a Siemens S7-1200 PLC over Modbus TCP/IP
+
+[![DOI](https://zenodo.org/badge/1160453236.svg)](https://doi.org/10.5281/zenodo.18904781)
 -------------
 #### Overview
 -------------
