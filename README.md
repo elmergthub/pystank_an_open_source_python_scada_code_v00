@@ -51,7 +51,7 @@ The graphical interface is subsequently presented figura 04, enabling real-time 
 
 A demonstration of the SCADA system for tank level PID control can be viewed here:
 
-https://youtu.be/BlYwCKPUsFo?si=GcnJT2tNVNm4x7GX
+https://youtu.be/aXO-hsBcNxE?si=bIGZbm5S7Tx_OzEk
 
 The video shows the graphical interface, real-time monitoring of the process variables (PV, SP, CV), and communication with the S7-1200 PLC using Modbus TCP/IP.
 
