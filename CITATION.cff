@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Tarifa Valdez"
+  given-names: "Elmer Rufo"
+title: "PySTank: An open-source Python SCADA tool for real-time tank level control of a Siemens S7-1200 PLC over Modbus TCP/IP"
+version: v1.0.0
+doi: 10.5281/zenodo.18904782
+date-released: 2026-03-07
+url: "https://doi.org/10.5281/zenodo.18904782"
